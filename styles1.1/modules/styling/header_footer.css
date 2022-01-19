@@ -1,0 +1,144 @@
+/* REQUIRES: orientation_size.css */
+
+/* TOC */
+@page toc:left{
+    @bottom-left{
+        content: "© Aurigo Software Technologies Inc.";
+        letter-spacing: 0.025em;
+        color: #09516e !important;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-size:14px;
+        font-style: normal;
+        font-weight: bold;
+        
+}
+    @bottom-right {
+        content: "";
+        letter-spacing: 0.025em;
+        background-color: #fff;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        border-top: 2px solid #2d9ed0 !important;
+    }
+}
+
+@page toc:right{
+    @bottom-left{
+        content: "© Aurigo Software Technologies Inc.";
+        letter-spacing: 0.025em;
+        font-size:14px;
+        color: #09516e !important;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        
+}
+    @bottom-right{
+        content: "";
+        letter-spacing: 0.025em;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+    }
+}
+
+/* BODY */
+@page:left{
+    @top-right{
+        content: "{map.title}";
+        letter-spacing: 0.025em;
+        line-height: 1em;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-weight: bold;
+        color: #09516e !important;
+        font-size: 14px;
+        border-bottom: 2px solid #2d9ed0 !important;
+    }
+    @top-left{
+        font-size: 14px;
+        color: #09516e !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: none;
+        content: "";
+        letter-spacing: 0.025em;
+        line-height: 1em;
+        border-bottom: 2px solid #2d9ed0 !important;
+    }
+      @bottom-left{
+        content: "© Aurigo Software Technologies Inc.";
+        letter-spacing: 0.025em;
+        color: #09516e !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    @bottom-right {
+        font-size: 14px;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        font-weight: normal;        
+        font-size: 14px;
+        color: #09516e !important;
+        font-weight: bold;
+        content: counter(page);
+    }
+}
+
+@page:right{
+    @top-right{
+        content: "{map.title}";
+        letter-spacing: 0.025em;
+        line-height: 1em;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-weight: bold;
+        color: #09516e !important;
+        font-size: 14px;
+        border-bottom: 2px solid #2d9ed0 !important;
+    }
+    @top-left{
+        font-size: 14px;
+        color: #09516e !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: none;
+        content: "";
+        letter-spacing: 0.025em;
+        line-height: 1em;
+        border-bottom: 2px solid #2d9ed0 !important;
+    }
+    @bottom-left{
+        content: "© Aurigo Software Technologies Inc.";
+        letter-spacing: 0.025em;
+        color: #09516e !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    @bottom-right {
+        font-size: 14px;
+        border-top: 2px solid #2d9ed0 !important;
+        background-color: #fff !important;
+        font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+        font-style: normal;
+        font-weight: normal;        
+        font-size: 14px;
+        color: #09516e !important;
+        font-weight: bold;
+        content: counter(page);
+        letter-spacing: 0.025em;
+    }
+}

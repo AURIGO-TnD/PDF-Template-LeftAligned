@@ -1,0 +1,22 @@
+/* Style figure descriptions and table descriptions. */
+.figdesc,
+.tabledesc {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+  display: block;
+  clear: both;
+  text-align: justify;
+  margin: 0px 0px 2.5px 0px;
+}
+
+/* Fix margins for paragraphs in descriptions */
+.figdesc > p:first-child,
+.tabledesc > p:first-child,
+.figdesc > .p:first-child,
+.tabledesc > .p:first-child {
+  margin-top: 0px;
+}
+
+/* Add margins after table description elements. */
+.tabledesc {
+  margin-bottom: 5px;
+}

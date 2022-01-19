@@ -1,0 +1,52 @@
+/* Avoid overflowing text in links: */
+a {
+  word-wrap: break-word;
+}
+
+/* Style inline cross-references. */
+.xref,
+.link {
+  color: #0066CC !important;
+  text-decoration: none;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+  font-size: 16px;
+}
+/*Underline when hover over the link*/
+.xref,
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* Correctly display links to steps. */
+.taskbody a[href*="step"] {
+  content: "step " target-counter(attr(href), li);
+}
+
+/* Correctly display links to substeps. */
+.taskbody a[href*="substep"] {
+  content: "substep " target-counter(attr(href), li, lower-alpha);
+}
+
+/* Style Related links. */
+section.related-links {
+    margin-top: 15px;
+}
+li.linklist {
+    margin-left: 35px;
+}
+
+/* Style Related links and relationship tables captions */
+.linklist > strong,
+.linklist > strong * {
+  display: block;
+  clear: both;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.025em;
+  color: #0066CC !important;
+}
+.linklist > strong {
+  margin-top: 15px;
+}

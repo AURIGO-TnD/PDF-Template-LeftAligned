@@ -1,0 +1,88 @@
+/* Ensure that tables and choicetables span across the whole space available. */
+table {
+  width: 100%; /* 100% shows a vertical scrollbar on sites. */
+  margin: 5px 0px 5px 0px;
+  table-layout: auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #000 !important; /* needed to overwrite the default site styling. */
+}
+
+/* Remove the table and choicetable borders completely.
+table,
+table * {
+  border-collapse: collapse;
+  ;
+}*/
+
+/* Add a top-border for tables that do not contain thead elements.
+table {
+  border-top: 3px solid #000 !important; /* The important property seems to be needed to overwrite the default SSG styling
+  border-bottom: 3px solid #000 !important; /* The important property seems to be needed to overwrite the default SSG styling
+}
+table:has(thead) {
+  border-top: none;
+}*/
+
+/* Set padding for table entries. */
+td {
+  padding: 10px;
+}
+
+/* Style the table and choicetable headers. 
+Assert the same styling in table and choicetable headers and their children elements. */
+th,
+th *{
+  font-family:'Arial', 'Helvetica Neue', sans-serif !important;
+  font-weight: bold !important; /* The important property seems to be needed to overwrite the default PDF Gen and SSG styling */
+  color: #000 !important; /* The important property seems to be needed to overwrite the default PDF Gen and SSG styling */
+  padding: 10px;
+  letter-spacing: 0.5px;
+  background-color: #A9A9A9 !important;
+}
+th, td {
+  border: 1px solid #000
+}
+tr > td {
+  font-weight: normal !important;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif !important;
+  text-align: left !important;
+}
+
+th,
+th *,
+th > .fn::footnote-call {
+  font-weight: bold;
+  color: #000;
+  background-color: #000;
+}
+
+/* Style uneven table and choicetable rows.*/
+tr:nth-child(odd) > td {
+  background-color: #fff;
+  vertical-align: top;
+}
+
+/*Style even table and choicetable rows.*/
+tr > td {
+  background-color: #fff !important;
+  vertical-align: top;
+}
+
+/* Support text alignment in tables */
+table .align-right,
+table .align-right * {
+    text-align: right !important;
+}
+table .align-center,
+table .align-center * { 
+    text-align: center !important;
+}
+table .align-left,
+table .align-left * {
+    text-align: left !important;
+}
+table .align-justify,
+table .align-justify * {
+    text-align: justify !important;
+}
