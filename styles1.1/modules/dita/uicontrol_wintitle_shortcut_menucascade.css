@@ -25,7 +25,7 @@ abbr[title] {
 }
 
 /* Style Bold elements. */
-.bold {
+.b {
   font-weight: bold;
   color: #3d4248 !important;
 }
