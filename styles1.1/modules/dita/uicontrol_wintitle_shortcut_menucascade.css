@@ -26,6 +26,6 @@ abbr[title] {
 
 b,
 .b {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #3d4248 !important;
 }
