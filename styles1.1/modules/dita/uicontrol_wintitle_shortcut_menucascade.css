@@ -23,3 +23,9 @@ abbr[title] {
   content: "→"; /* determine a custom "and then" symbol */
   color: #000;
 }
+
+/* Style Bold elements. */
+.bold {
+  font-weight: bold;
+  color: #3d4248 !important;
+}
