@@ -24,8 +24,4 @@ abbr[title] {
   color: #000;
 }
 
-/* Style Bold elements. */
-.b {
-  font-weight: bold;
-  color: #3d4248 !important;
-}
+
