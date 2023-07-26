@@ -63,7 +63,7 @@
 
 /* Add captions before prerequisite elements. */
 .prereq::before {
-  content: "Before You Begin";
+  content: "Prerequisites";
 }
 
 /* Add captions before postrequisite elements. */
